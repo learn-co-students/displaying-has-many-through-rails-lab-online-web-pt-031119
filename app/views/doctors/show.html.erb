@@ -1,7 +1,7 @@
 <h2><%= @doctor.name %></h2>
 
   <% @doctor.appointment.each do |appointment| %>
-    <%= link_to appointment.patient.name, user_path(comment.user) %> 
+    <%= link_to appointment.patient.name, patient_path(comment.user) %> 
     <%= appointment.datetime %>
     
   <ul>

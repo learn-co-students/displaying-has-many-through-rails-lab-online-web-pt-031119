@@ -1,0 +1,18 @@
+<h2><%= @patient.name %></h2>
+
+  <% @patient.appointment.each do |appointment| %>
+    <%= link_to appointment.doctor.name, patient_path(comment.user) %> 
+    <%= appointment.datetime %>
+    
+  <ul>
+    <li>
+      <%= @patient.age %>
+    </li>
+    
+     <% @patient.appointment.each do |appointment| %>
+    <%= link_to appointment.doctor.name, patient_path(appointment.patient) %> 
+    <%= appointment.datetime %>
+  
+  </ul>
+  
+  <% end %>
