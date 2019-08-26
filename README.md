@@ -1,3 +1,11 @@
+doctor = name:string, department:string
+patient = name:string age:integer
+appointment = datetime:appointment_datetime, patient_id:integer, doctor_id:integer
+
+rails g resource Account name:string payment_status:string --no-test-framework
+
+
+
 # Displaying Has Many Through Rails Lab
 
 ## Objectives
